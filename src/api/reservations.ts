@@ -2,7 +2,8 @@ import { mockReservations } from './mock-data';
 import type { Reservation, CustomerInfo, BookingDates } from '@/types/booking';
 import type { Extra, Insurance } from '@/types/vehicle';
 
-const USE_MOCK = import.meta.env.VITE_USE_MOCK === 'true';
+// FORCE MOCK FOR DEMO DEPLOYMENT
+const USE_MOCK = true; // import.meta.env.VITE_USE_MOCK === 'true';
 
 let localReservations = [...mockReservations];
 let nextId = 2;
@@ -46,8 +47,14 @@ export async function lookupReservation(
 ): Promise<Reservation | null> {
     if (USE_MOCK) {
         await new Promise(r => setTimeout(r, 300));
+        const cleanCode = code.trim().toLowerCase();
+        const cleanEmail = email.trim().toLowerCase();
+
+        console.log(`Looking up: ${cleanCode} / ${cleanEmail}`);
+        console.log('Available codes:', localReservations.map(r => r.confirmationCode.toLowerCase()));
+
         return localReservations.find(
-            r => r.confirmationCode.toLowerCase() === code.toLowerCase() && r.customer.email.toLowerCase() === email.toLowerCase()
+            r => r.confirmationCode.toLowerCase() === cleanCode && r.customer.email.toLowerCase() === cleanEmail
         ) || null;
     }
 
