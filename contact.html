@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contact Support &amp; Locations | Buddy Car Rental</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#212121",
+                        "background-light": "#f7f7f7",
+                        "background-dark": "#191919",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style type="text/tailwindcss">
+        .form-input-minimal {
+            @apply w-full bg-white dark:bg-zinc-900 border-zinc-200 dark:border-zinc-800 rounded-none border-t-0 border-x-0 border-b-2 focus:ring-0 focus:border-primary px-0 py-4 transition-all duration-300;
+        }
+    </style>
+</head>
+<body class="font-display bg-background-light dark:bg-background-dark text-primary dark:text-white antialiased">
+<header class="sticky top-0 z-50 w-full bg-white/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-primary/5">
+<div class="container mx-auto px-6 h-20 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="text-2xl font-extrabold tracking-tighter uppercase">Buddy.</span>
+<span class="text-xs font-medium tracking-widest uppercase opacity-40">Rentals</span>
+</div>
+<nav class="hidden md:flex items-center gap-10">
+<a class="text-sm font-medium hover:text-primary/60 transition-colors uppercase tracking-wide" href="#">Vehicles</a>
+<a class="text-sm font-medium hover:text-primary/60 transition-colors uppercase tracking-wide" href="#">How It Works</a>
+<a class="text-sm font-medium hover:text-primary/60 transition-colors uppercase tracking-wide" href="#">FAQs</a>
+<a class="text-sm font-medium text-primary border-b-2 border-primary transition-colors uppercase tracking-wide" href="#">Contact</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="bg-primary text-white px-6 py-2.5 rounded text-sm font-bold uppercase tracking-widest hover:bg-primary/90 transition-all">
+                    Book Now
+                </button>
+</div>
+</div>
+</header>
+<main>
+<section class="pt-24 pb-12 bg-white dark:bg-background-dark">
+<div class="container mx-auto px-6">
+<div class="inline-flex items-center gap-2 mb-6 px-3 py-1 rounded-full bg-primary/5 text-primary/60 text-xs font-bold uppercase tracking-widest">
+<span class="material-icons text-sm">support_agent</span>
+                    Concierge Support
+                </div>
+<h1 class="text-5xl md:text-6xl font-extrabold tracking-tighter uppercase mb-4">Get In Touch</h1>
+<p class="text-primary/40 text-lg max-w-2xl font-medium">Have questions about your rental or need assistance? Our premium support team is available 24/7 to ensure your journey is seamless.</p>
+</div>
+</section>
+<section class="pb-24 bg-white dark:bg-background-dark">
+<div class="container mx-auto px-6">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-20">
+<div class="space-y-12">
+<div class="space-y-8">
+<form class="space-y-6">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="space-y-2">
+<label class="text-[10px] font-bold uppercase tracking-widest opacity-50 block">Your Name</label>
+<input class="form-input-minimal" placeholder="John Doe" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="text-[10px] font-bold uppercase tracking-widest opacity-50 block">Email Address</label>
+<input class="form-input-minimal" placeholder="john@example.com" type="email"/>
+</div>
+</div>
+<div class="space-y-2">
+<label class="text-[10px] font-bold uppercase tracking-widest opacity-50 block">Subject</label>
+<input class="form-input-minimal" placeholder="Rental Inquiry" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="text-[10px] font-bold uppercase tracking-widest opacity-50 block">Message</label>
+<textarea class="form-input-minimal resize-none" placeholder="How can we help you today?" rows="4"></textarea>
+</div>
+<button class="bg-primary text-white w-full py-5 rounded-none text-sm font-bold uppercase tracking-[0.2em] hover:bg-zinc-800 transition-all flex items-center justify-center gap-3">
+                                    Send Message
+                                    <span class="material-icons text-sm">north_east</span>
+</button>
+</form>
+</div>
+</div>
+<div class="space-y-12">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+<div class="space-y-4">
+<div class="w-10 h-10 flex items-center justify-center bg-primary/5 rounded">
+<span class="material-symbols-outlined text-primary/60">corporate_fare</span>
+</div>
+<div>
+<h3 class="text-xs font-bold uppercase tracking-widest mb-2">Headquarters</h3>
+<p class="text-sm text-primary/60 leading-relaxed">
+                                        742 Premium Way<br/>
+                                        Downtown Los Angeles, CA<br/>
+                                        90014, United States
+                                    </p>
+</div>
+</div>
+<div class="space-y-4">
+<div class="w-10 h-10 flex items-center justify-center bg-primary/5 rounded">
+<span class="material-symbols-outlined text-primary/60">call</span>
+</div>
+<div>
+<h3 class="text-xs font-bold uppercase tracking-widest mb-2">Direct Line</h3>
+<p class="text-sm text-primary/60 leading-relaxed">
+                                        +1 (800) 283-3901<br/>
+                                        Mon–Sun, 24/7 Support
+                                    </p>
+</div>
+</div>
+<div class="space-y-4">
+<div class="w-10 h-10 flex items-center justify-center bg-primary/5 rounded">
+<span class="material-symbols-outlined text-primary/60">mail</span>
+</div>
+<div>
+<h3 class="text-xs font-bold uppercase tracking-widest mb-2">Email Support</h3>
+<p class="text-sm text-primary/60 leading-relaxed">
+                                        concierge@buddy.rentals<br/>
+                                        partners@buddy.rentals
+                                    </p>
+</div>
+</div>
+<div class="space-y-4">
+<div class="w-10 h-10 flex items-center justify-center bg-primary/5 rounded">
+<span class="material-symbols-outlined text-primary/60">terminal</span>
+</div>
+<div>
+<h3 class="text-xs font-bold uppercase tracking-widest mb-2">Integration</h3>
+<p class="text-sm text-primary/60 leading-relaxed">
+                                        Powered by Caren.io<br/>
+                                        API Status: Operational
+                                    </p>
+</div>
+</div>
+</div>
+<div class="relative w-full h-[400px] bg-zinc-100 dark:bg-zinc-800 overflow-hidden group">
+<img alt="Map Location" class="w-full h-full object-cover grayscale transition-all duration-700 group-hover:grayscale-0 opacity-70 group-hover:opacity-100" data-alt="Minimalist grayscale map view of a metropolitan area" data-location="Los Angeles" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDjQW3XiINvR7EBZrJ-09XvvfJGsJ6eJD_-vyMeZOD1Ke1j2DGqbW8TLyUz7CAq23GtDYbMcZo0GG8ne6U6PZvxlfgpHqKWY9Ya0KdLqqcXjSGTPXciT1vHnxkpgt3D60_HQdwxqo2bDz1Tw7Wj0M9dsvwhBE1JOUzykZug070zl4f00XmbiZMIAajSkzn38RGuEryONYSUF4TijXJEQJ4AzjCKR8X9-ImcTHZlj6CAdmQMp1RQSKNGfhqTEz70VGucuhLdJz25nHUa"/>
+<div class="absolute inset-0 pointer-events-none border border-primary/5"></div>
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+<div class="relative flex items-center justify-center">
+<div class="absolute w-12 h-12 bg-primary/20 rounded-full animate-ping"></div>
+<div class="relative w-4 h-4 bg-primary rounded-full border-2 border-white"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="bg-white dark:bg-background-dark py-12 border-t border-primary/5">
+<div class="container mx-auto px-6">
+<div class="flex flex-col md:flex-row justify-between items-center gap-8">
+<div class="flex items-center gap-2">
+<span class="text-xl font-extrabold tracking-tighter uppercase">Buddy.</span>
+<span class="text-[10px] font-bold uppercase tracking-widest opacity-30">© 2024</span>
+</div>
+<div class="flex gap-8">
+<a class="text-[10px] font-bold uppercase tracking-widest opacity-40 hover:opacity-100 transition-opacity" href="#">Privacy</a>
+<a class="text-[10px] font-bold uppercase tracking-widest opacity-40 hover:opacity-100 transition-opacity" href="#">Terms</a>
+<a class="text-[10px] font-bold uppercase tracking-widest opacity-40 hover:opacity-100 transition-opacity" href="#">Insurance</a>
+<a class="text-[10px] font-bold uppercase tracking-widest opacity-40 hover:opacity-100 transition-opacity" href="#">Caren API</a>
+</div>
+<div class="flex gap-4">
+<a class="w-8 h-8 rounded-full bg-primary/5 flex items-center justify-center hover:bg-primary/10 transition-colors" href="#">
+<i class="material-icons text-sm">facebook</i>
+</a>
+<a class="w-8 h-8 rounded-full bg-primary/5 flex items-center justify-center hover:bg-primary/10 transition-colors" href="#">
+<i class="material-icons text-sm">camera_alt</i>
+</a>
+</div>
+</div>
+</div>
+</footer>
+
+</body></html>
