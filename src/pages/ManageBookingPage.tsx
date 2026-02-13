@@ -147,6 +147,12 @@ export default function ManageBookingPage() {
                                 <span className="material-icons text-sm">search</span>
                                 {loading ? 'Searching...' : 'Find My Booking'}
                             </button>
+
+                            {/* DEMO HINT */}
+                            <div className="mt-4 p-3 bg-blue-50 border border-blue-100 rounded-lg text-xs text-blue-700 text-center">
+                                <span className="font-bold uppercase tracking-wider block mb-1">Demo Credentials</span>
+                                Code: <strong>BCR-2026-001</strong> · Email: <strong>sarah@example.com</strong>
+                            </div>
                         </form>
 
                         {/* Not Found */}
@@ -169,8 +175,8 @@ export default function ManageBookingPage() {
                             </div>
                         </div>
                     </div>
-                </section>
-            </div>
+                </section >
+            </div >
         );
     }
 
